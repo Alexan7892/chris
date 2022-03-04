@@ -1,0 +1,43 @@
+/*body {*/
+/*    background-color: blue;*/
+/*}*/
+
+/*#header{*/
+/*    width: 100px;*/
+/*}*/
+/*#root {*/
+/*    display: grid;*/
+/*}*/
+
+/*#root div {*/
+/*    border: 1px solid #484848;*/
+/*}*/
+
+canvas {
+    width: 300px;
+    height: 400px;
+}
+
+#chartContainer {
+    position: relative;
+    margin: auto;
+    height: auto;
+}
+
+.chart-div{
+    width:  32vw;
+    float: left;
+}
+
+.margin-div{
+    margin-top: 110px;
+    float: left;
+    width: 100%;
+}
+
+h3{
+    text-align: center;
+}
+.pchart{
+    text-align: center;
+}
