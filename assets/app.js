@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import store from "../src/redux/redux-store";
 import Charts from "../src/components/Charts/Charts";
 import Header from "../src/components/Header/Header";
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 import {Provider} from "react-redux";
 import ChartsContainer from "../src/components/Charts/ChartsContainer";
 import './styles/app.css';
@@ -23,7 +23,10 @@ class App extends Component {
 ReactDOM.render(
     <BrowserRouter>
         <Provider store={store}>
-            <App/>
+            <Routes>
+            <Route path='/questions' element={<Header />}/>
+            <Route path='/' element={<App/>}/>
+            </Routes>
         </Provider>
     </BrowserRouter>, document.getElementById('root'));
 
