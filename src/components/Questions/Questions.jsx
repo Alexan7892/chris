@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class Questions extends Component {
 
     componentDidMount() {
-        alert(1);
+        alert(2);
     }
 
     render() {

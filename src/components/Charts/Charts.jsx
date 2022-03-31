@@ -21,7 +21,6 @@ let createChart = (id,u) =>{
     h3.textContent = u.caption;
     document.getElementById('chartContainer').appendChild(div).appendChild(h3);
 
-    debugger;
     u.data.forEach((u2) => {
         var canvas = document.createElement("canvas");
         canvas.id = 'canvas_' + id + u2.idc;

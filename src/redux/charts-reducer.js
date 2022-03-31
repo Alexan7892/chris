@@ -29,7 +29,6 @@ const chartsReducer = (state = initialState, action) => {
                 })
             }
         case SET_CHARTS: {
-            debugger;
             return { ...state, charts: [ ...state.charts, ...action.charts ]}
         }
         default:

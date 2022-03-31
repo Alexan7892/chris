@@ -4,8 +4,6 @@ import {connect} from "react-redux";
 import {showmore, showless, setChart} from "../../redux/charts-reducer";
 import axios from "axios";
 
-debugger;
-
 class ChartsContainer extends React.Component {
     componentDidMount() {
         axios.get(`http://sym/api/charts_datas.json?page=1`)

@@ -8,6 +8,7 @@ import {Provider} from "react-redux";
 import ChartsContainer from "../src/components/Charts/ChartsContainer";
 import './styles/app.css';
 import Questions from "../src/components/Questions/Questions";
+import {AllMenu} from "../src/components/AllMenu/AllMenu";
 
 class App extends Component {
     componentDidMount() {
@@ -32,10 +33,12 @@ class App extends Component {
 ReactDOM.render(
     <BrowserRouter>
         <Provider store={store}>
+            <AllMenu/>
             <Header />
             <Routes>
                 <Route path='/' element={<App/>}/>
                 <Route path='/questions' element={<Questions />}/>
+                <Route path='/tech' element={<Questions />}/>
             </Routes>
         </Provider>
     </BrowserRouter>, document.getElementById('root'));
